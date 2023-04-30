@@ -1,6 +1,6 @@
 # PAT-Practica5
 
-En esta práctica se reutiliza el servidor creado en la práctica anterior y se le añade funcionalidad de persistencia en una base de datos BBDD H2.
+En esta práctica se reutiliza la aplicación de SpringBoot creada en la práctica anterior y se le añade funcionalidad de persistencia en una base de datos BBDD H2.
 
 El servidor esta levantado en el puerto 8888 (http://localhost:8888) y utiliza el Actuator "Health" para comprobar el estado de dicho servidor. Accediendo a http://localhost:8888/health se podrá visualizar el estado de este por un mensaje de texto.
 
