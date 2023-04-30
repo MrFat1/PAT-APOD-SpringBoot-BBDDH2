@@ -4,9 +4,9 @@ En esta práctica se reutiliza la aplicación de SpringBoot creada en la prácti
 
 El servidor esta levantado en el puerto 8888 (http://localhost:8888) y utiliza el Actuator "Health" para comprobar el estado de dicho servidor. Accediendo a http://localhost:8888/health se podrá visualizar el estado de este por un mensaje de texto.
 
-Adicionalmente, se podrá llevar un seguimiento de las tablas registradas en la base de datos accediendo a la consola H2 a través del enlace http://localhost:8888/h2-console/ e introduciendo el __usuario sa__ y la __contraseña 1234__.
+Adicionalmente, se podrá llevar un seguimiento de las tablas registradas en la base de datos accediendo a la consola H2 a través del enlace http://localhost:8888/h2-console/ e introduciendo el ***usuario: sa*** y la ***contraseña: 1234***.
 
-##Casos de prueba
+## Casos de prueba
 Haciendo uso de la libería JUnit, se han realizado diversos casos de prueba para las llamadas a la API. Se pueden encontrar en la carpeta de Tests.
 Las pruebas realizadas son las siguiente:
 
@@ -14,7 +14,7 @@ Las pruebas realizadas son las siguiente:
 - Casos de prueba por error en los parámetros (HTTP 400) al introducir una fecha errónea en el formulario de búsqueda de imágenes
 - Casos de prueba de error en el servidor (HTTP 500) cuando la API key es incorrecta
 
-##Operaciones con la base de datos
+## Operaciones con la base de datos
 
 En vez de generar un fichero con la tabla de la base de datos ya generada, se hará uso de la **API de la NASA** *RoberImages* para rellenar una tabla con la información devuelta por la API. La estructura de la tabla la podrá encontrar en el fichero *schema.sql*. 
 
