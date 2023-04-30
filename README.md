@@ -4,7 +4,7 @@ En esta práctica se reutiliza la aplicación de SpringBoot creada en la prácti
 
 El servidor esta levantado en el puerto 8888 (http://localhost:8888) y utiliza el Actuator "Health" para comprobar el estado de dicho servidor. Accediendo a http://localhost:8888/health se podrá visualizar el estado de este por un mensaje de texto.
 
-Adicionalmente, se podrá llevar un seguimiento de las tablas registradas en la base de datos accediendo a la consola H2 a través del enlace http://localhost:8888/h2-console/ e introduciendo el **usuario sa** y la **contraseña 1234**.
+Adicionalmente, se podrá llevar un seguimiento de las tablas registradas en la base de datos accediendo a la consola H2 a través del enlace http://localhost:8888/h2-console/ e introduciendo el __**usuario sa**__ y la __**contraseña 1234**__.
 
 ##Casos de prueba
 Haciendo uso de la libería JUnit, se han realizado diversos casos de prueba para las llamadas a la API. Se pueden encontrar en la carpeta de Tests.
