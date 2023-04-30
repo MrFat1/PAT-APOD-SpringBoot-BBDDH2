@@ -1,0 +1,62 @@
+.text{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgba(90, 86, 86, 0.6);
+    
+}
+
+#imgHD {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.spaced {
+    margin: 10px;
+}
+
+.textp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 15px;
+    background-color: rgba(90, 86, 86, 0.6);
+}
+
+#bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+label {
+    display: block;
+    font: 'Fira Sans', sans-serif;
+}
+
+button {
+    text-align: center;
+}
+
+input, label {
+    margin: 0.4rem 0;
+}

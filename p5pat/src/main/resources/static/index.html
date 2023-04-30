@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> NASA Images</title>
+		    <meta charset="utf-8">
+		    <meta name="author" content="Daniel Valverde"></meta>
+            <link rel="stylesheet" href="estilo.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="icon" href="nasa.png">
+    </head>
+    <body id="bg-image">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="roberImages.html">Mars Rober</a></li>
+              </ul>
+            </div>
+        </nav>
+
+        <div>
+            <h1 class="text"><b>Imagen del día</b></h1>
+            <h3 class = "text2"><i id="imgTitle"></i></h3>
+            <p class="textp" id="desc"></p>
+            <a id="imgHD" target="_blank">Para ver la Imagen completa pulsa aqui</a>
+        </div>
+
+        <script src="./apiCall.js"></script>
+
+    </body>			
+</html>

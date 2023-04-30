@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> NASA Images</title>
+		    <meta charset="utf-8">
+        <meta name="author" content="Daniel Valverde"/>
+            <link rel="stylesheet" href="estilo.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="icon" href="nasa.png">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="roberImages.html">Mars Rober</a></li>
+              </ul>
+            </div>
+        </nav>
+
+
+        <form method="POST" id="submit">
+            <fieldset>
+                <legend class="spaced" >Introduce parámetros de búsqueda</legend>
+                <label class="spaced" for="fecha">Selecciona una fecha para obtener imágenes:</label>
+                <input type="date" name="fecha" value="2015-06-03" min="2015-01-01" max="2022-12-31">
+                <br>
+                <label class="spaced">Selecciona una cámara del Mars Rober</label>
+                <select name="select">
+                    <option value="fhaz">FHAZ</option>
+                    <option value="rhaz">RHAZ</option>
+                    <option value="chemcam">CHEMCAM</option>
+                    <option value="mast">MAST</option>
+                    <option value="mahli">MAHLI</option>
+                    <option value="pancam">PANCAM</option>
+                    <option value="mardi">MARDI</option>
+                    <option value="navcam">NAVCAM</option>
+                    <option value="minites">MINITES</option>
+                </select>
+                <br><br>
+                <button type="submit" class="btn btn-primary">Buscar</button>
+                <button type="reset" class="btn btn-primary">Vaciar galería actual</button>
+                <button id="imgList" class="btn btn-primary">Cargar galería guardada</button>
+                <button id="addToGallery" class="btn btn-primary">Guardar galería</button>
+                <button id="clearGallery" class="btn btn-primary">Eliminar galería guardada</button>
+            </fieldset>
+        </form>
+
+
+
+        <h3 style="text-align: center;"><u>Galería de imágenes</u></h3>
+        <br>
+        <div id="galeria" class="row">
+        </div>
+
+        <script src="./mrsRober.js"></script>
+
+    </body>
+</html>
