@@ -1,4 +1,4 @@
-# PAT-Practica5
+# PAT - NASA API - APOD - SpringBoot server con BBDD H2
 
 En esta práctica se reutiliza la aplicación de SpringBoot creada en la práctica anterior y se le añade funcionalidad de persistencia en una base de datos BBDD H2.
 
